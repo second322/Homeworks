@@ -88,4 +88,475 @@ http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number
 
 
 
+TXT
+ 1. Создать внешний репозиторий c названием TXT.         
+ На странице с профилем кнопка New(repositorie name: TXT)
 
+ 2. Клонировать репозиторий TXT на локальный компьютер.  
+ git clone https://github.com/second322/TXT.git
+
+ 3. Внутри локального TXT создать файл “new.txt”.        
+ cd TXT                                                      
+ cat > new.txt                                                  
+ 123                                                     
+ ctr+c
+
+ 4. Добавить файл под гит.                               
+ git status
+ git add new.txt
+
+ 5. Закоммитить файл.
+ git commit -m "hello"
+
+ 6. Отправить файл на внешний GitHub репозиторий.        
+ git push new.txt
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе        
+(ФИО, возраст, количество домашних животных, будущая желаемая зарплата).          
+ cat >> new.txt                                                                          
+ Full name: Makarov Maksim Sergeevich;
+ number of pets: 1;                                                           
+ age: 22;                                                       
+ salary:999;
+
+ 8. Отправить изменения на внешний репозиторий.                                   
+ git status                                                                             
+ git add .                                                                                 
+ git status                                                                                  
+ git commit -m "update new.txt"                                                                                  
+ git push
+
+ 9. Создать файл preferences.txt                                                   
+  cat > preferences.txt
+
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях
+ (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна).    
+ favorite movie: Iron man;                                                                                
+ favorite series: Snowpiercer;                                                                                   
+ favorite food: Paste;                                                                                 
+ favorite season: Summer;                                                                                  
+ country i want to visit: Hungary again:);
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены.   
+ cat > skills.txt
+                                                                                   
+ Testing theory                                                                         
+ SDLC, STLC                                                                                  
+ Client-server architecture                                                                                 
+ HTTP                                                                                 
+ JSON,XML                                                                                  
+ Postman                                                                                  
+ SQL                                                                                  
+ Python                                                                                  
+ Dev tools                                                                                  
+ VPN                                                                                  
+ Scrum                                                                                  
+ ADB                                                                                 
+ Charles, Fiddler
+
+ 12. Сделать коммит в одну строку.                                                 
+ git add .                                                                                 
+ git status                                                                               
+ git commit -m "new preferences and skills files"
+                                                                                   
+ 13. Отправить сразу 2 файла на внешний репозиторий.                               
+ git push       
+    
+ 14. На веб интерфейсе создать файл bug_report.txt.                                
+ add file -> create new file -> name: bug_report.txt
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.               
+ Commit changes
+ 
+ 16. На веб интерфейсе модифицировать файл bug_report.txt,                         
+ Summary: bug_report_1;                                                            
+ Project: test_project;
+ Version: 3.2.2;
+ Severity: S1(Blocker);
+ Priority: P1(High);
+ Status: Open;
+ Author: Makarov Maksim S.;
+ Assigned To: Makarov Maksim S.;
+ Steps to reproduce: 1)Open file
+                     2)edit
+                     3)Save
+
+ Actual result: 123;
+ Expected Result:321;
+ Attachment: -;
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.               
+ commit changes
+
+ 18. Синхронизировать внешний и локальный репозиторий TXT  
+ git pull
+ 
+ 
+ ----------------------------------------------------------------------------------------
+ 
+ GIT Homework 1
+
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+ На странице с профилем кнопка New(repositorie name: JSON)
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+ git clone https://github.com/second322/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”.
+ cd JSON
+ touch new.json
+
+ 7. Добавить файл под гит.
+ git add new.json
+
+ 8. Закоммитить файл.
+ git commit -m "add new.json"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+ git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе
+ (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+
+ vim new.json->press i
+ 
+ {
+        "Full name":"Makarov Maksim Sergeevich",
+        "Age":"22",
+        "Number of pets":"1",
+        "Salary":"999"
+ }
+
+ press escape->:wq
+
+ 11. Отправить изменения на внешний репозиторий.
+ git commit -am "edit new.json"
+ git push
+
+ 12. Создать файл preferences.json
+ touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях
+ (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+ 
+ vim preferences.json->press i
+
+ {
+        "favorite movie": "Iron man",                                           
+        "favorite series": "Snowpiercer",                                       
+        "favorite food": "Paste",                                               
+        "favorite season": "Summer",                                            
+        "country i want to visit": "Hungary again:)"
+ }
+
+ press escape->:wq
+
+ 14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+ touch skills.json
+
+ vim skills.json
+ {
+        
+        "Testing_theory":"+-",
+        "Client_server_architecture":"-",
+        "HTTP":"+-",
+        "JSON":"+",
+        "XML":"+-",
+        "postman":"-",
+        "SQL":"-",
+        "Python":"+-",
+        "Devtools":"-",
+        "VPN":"+-",
+        "Scrum":"-",
+        "ADB":"-",
+        "Charles":"+-",
+        "Fiddler":"+-"
+
+ }
+ 
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+ git add .
+ git commit -m "add preferences.json and skills.json"
+ git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+ add file -> create new file -> name: bug_report.json
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ Commit changes
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+
+ {
+    "Summary" : "bug_report_1",                                                           
+    "Project" : "test_project",
+    "Version" : "3.2.2",
+    "Severity" : "S1(Blocker)",
+    "Priority" : "P1(High)",
+    "Status" : "Open",
+    "Author" : "Makarov Maksim S.",
+    "Assigned To": "Makarov Maksim S.",
+    "Steps to reproduce": 
+    {
+                   "1" : "Open file",
+                   "2" : "Edit",
+                   "3" : "Save"
+    },
+
+    "Actual result" : "123",
+    "Expected Result" : "321",
+    "Attachment" : "-"
+}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+ git pull
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+  На странице с профилем кнопка New(repositorie name: XML)
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+ git clone https://github.com/second322/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.
+ cd XML
+ touch new.xml
+
+ 24. Добавить файл под гит.
+ git add new.xml
+
+ 25. Закоммитить файл.
+ git commit -m "add new.xml"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+ git push
+ 
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе
+ (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+ vim new.xml->press i
+ 
+ <about_me>
+        <Full_name>Makarov Maksim Sergeevich</Full_name>
+        <Age>22</Age>
+        <Number_of_pets>1</Number_of_pets>
+        <Salary>999</Salary>
+ </about_me>
+
+ press escape->:wq
+ 
+ 28. Отправить изменения на внешний репозиторий.
+ git commit -am "edit new.xml"
+ git push
+
+ 29. Создать файл preferences.xml
+ touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях
+ (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+
+ vim preferences.xml->press i
+
+ <preferences>
+        <favorite_movie>Iron man</favorite_movie>                                           
+        <favorite_series>Snowpiercer</favorite_series>                                       
+        <favorite_food>Paste</favorite_food>                                               
+        <favorite_season>Summer</favorite_season>                                            
+        <country_i_want_to_visit>Hungary again:)</country_i_want_to_visit>
+ </preferences>
+
+ press escape->:wq
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+ touch skills.xml
+
+ vim skills.xml
+
+ <skills>
+        
+        <one>Testing_theory</one>
+        <two>Client_server_architecture</2>
+        <three>HTTP</3>
+        <four>JSON</4>
+        <five>XML</5>
+        <six>postman</6>
+        <seven>SQL</7>
+        <eight>Python</8>
+        <nine>Devtools</9>
+        <ten>VPN</ten>
+        <eleven>Scrum</11>
+        <twelve>ADB</12>
+        <thirteen>Charles</13>
+        <fourteen>Fiddler</14>
+
+ </skills>
+
+ 32. Сделать коммит в одну строку.
+ git add . | git commit -m "add preferences.json and skills.json"
+ 
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+ git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ add file -> create new file -> name: bug_report.xml
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ Commit changes
+ 
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+ 
+<bug_report>
+	<Summary>bug_report_1</Summary>
+	<Project>test_project</Project>
+	<Version>3.2.2</Version>
+	<Severity>S1(Blocker)</Severity>
+	<Priority>P1(High)</Priority>
+	<Status>Open</Status>
+	<Author>Makarov Maksim S</Author>
+	<Assigned_To>Makarov Maksim S</Assigned_To>
+
+	<Steps_to_reproduce>
+		<one>Open file</one>
+		<two>Edit</two>
+		<three>Save</three>
+	</Steps_to_reproduce>
+	
+	<Actual_result>123</Actual_result>
+	<Expected_result>321</Expected_result>
+	<Attachment>No</Attachment>
+</bug_report>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ Commit changes
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+ git pull
+
+
+
+------------------------------------------------------------------------------
+
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman
+ git branch Postman
+
+- Jmeter
+ git branch Jmeter
+
+- CheckLists
+ git branch CheckLists
+
+- Bug_Reports
+ git branch Bug_Reports
+
+- SQL
+ git branch SQL
+
+- Charles
+ git branch Charles
+
+- Mobile_testing
+ git branch Mobile_testing
+
+
+2. Запушить все ветки на внешний репозиторий
+ git push -u origin Postman
+ git push -u origin Jmeter
+ git push -u origin CheckLists
+ git push -u origin Bug_Reports
+ git push -u origin SQL
+ git push -u origin Charles
+ git push -u origin Mobile_testing
+ 
+3. В ветке Bug_Reports сделать текстовый документ со структурой баг-репорта
+ git checkout Bug_Reports
+ touch bug_report.json
+ vim bug_report.json
+
+ press i->
+  {
+    "Summary" : "bug_report_1",                                                           
+    "Project" : "test_project",
+    "Version" : "3.2.2",
+    "Severity" : "S1(Blocker)",
+    "Priority" : "P1(High)",
+    "Status" : "Open",
+    "Author" : "Makarov Maksim S.",
+    "Assigned To": "Makarov Maksim S.",
+    "Steps to reproduce": 
+    {
+                   "1" : "Open file",
+                   "2" : "Edit",
+                   "3" : "Save"
+    },
+
+    "Actual result" : "123",
+    "Expected Result" : "321",
+    "Attachment" : "-"
+}
+ 
+ press escape->:wq
+
+ 
+4. Запушить структуру баг-репорта на внешний репозиторий
+ git add .
+ git commit -m "add bug_report.json"
+ git push
+ 
+5. Вмержить ветку Bag Reports в Main
+ git checkout main
+ git merge Bug_Reports
+ 
+ 
+6. Запушить main на внешний репозиторий.
+ git push
+ 
+7. В ветке CheckLists набросать структуру чек листа.
+ git checkout CheckLists
+ touch checklist.txt
+ vim checklist.txt
+ 
+ press i->
+ Редактирование поля  
+           Имя              ок
+         Фамилия            ок    
+         Отчество           ок
+         Возраст          ошибка
+           Вес            ошибка
+           Пол              ок
+ press escape->:wq
+ 
+ 
+8. Запушить структуру на внешний репозиторий
+ git add .
+ git commit -m "add checklist.txt"
+ git push
+ 
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+ base:main
+ compare:CheckLists
+ Create pull request
+ Merge pull request
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+git checkout main
+git pull
+                        
